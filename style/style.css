@@ -4,7 +4,7 @@
     --color-dblue:#141922;
     --color-dgray: #282828;
     --color-white: #ffffff;
-    --color-lgray: #c5c5c5;
+    --color-lgray: #8b8787;
     
     --main-title-font: 0.8rem;
     --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
@@ -15,11 +15,12 @@
     --sidebar-width-l: 250px;
 
 
-    --space-s: 1rem;
-    --space-m: 2rem;
-    --space-l: 3rem;
+    --font-s: .8rem;
+    --font-m: 1rem;
+    --font-l: 3rem;
     
-
+    
+    --spacing-m: 1rem;
    }
 
 /*! FONT AWESOME */
@@ -76,10 +77,12 @@ footer {
 
 ul {
     list-style: none;
+    color: var(--color-lgray);
 }
 
 a {
     text-decoration: none;
+    color: var(--color-lgray);
 }
 
 button {
@@ -90,7 +93,8 @@ button {
 
 .container-main {
     width: calc(100vw - var(--sidebar-width-s));
-    
+    padding: 0 10px;
+
     background-color: var(--color-dblue);
     
     position: absolute;
@@ -163,7 +167,10 @@ button {
     border-radius: 50%;
 }
 
-/* UPGRADE */
+
+/*! MAIN */
+
+/* UPGRADE BAR */
 
 .upgrade-bar button {
     border: 1px solid white;
@@ -178,4 +185,30 @@ button {
     top: 50%;
     right: 5px ;
     transform: translateY(-50%);
+}
+
+/*  SUBNAV  */
+.sub-nav {
+    padding: calc(10px + var(--player-height)) 0 0 0;
+}
+
+.sub-nav ul {
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.sub-nav li{
+    color: var(--color-lgray);
+    font-size: var(--font-s);
+    font-weight: bold;
+    
+    margin: var(--spacing-m);
+}
+
+.evidence:active::after {
+    content: '';
+    border-bottom: 2px solid #ADFF2F;
+    width: 30px;
+    margin: 3px auto;
+    display: block;
 }
