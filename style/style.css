@@ -1,0 +1,96 @@
+/*! CSS PROPERTIES */
+
+:root {
+    --color-dblue:#141922;
+    --color-dgray: #282828;
+    --color-white: #ffffff;
+    --color-lgray: #c5c5c5;
+    
+    --main-title-font: 0.8rem;
+    --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
+    --song-subtitle-font: 0.8rem;
+
+    --player-height: 100px;
+    --sidebar-width-s: 50px;
+    --sidebar-width-l: 250px;
+
+
+    --space-s: 1rem;
+    --space-m: 2rem;
+    --space-l: 3rem;
+    
+
+   }
+
+/*! FONT AWESOME */
+
+
+/*! GENERAL RULES  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: var(--player-height);
+}
+
+footer {
+    height: var(--player-height);
+    width: 100%;
+    background-color: dodgerblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#sidebar {
+    width: 50px;
+    height: calc(100vh - var(--player-height));        
+    
+    background-color: black;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 10px;
+}
+
+.upgrade-bar {
+    height: var(--player-height);
+    width: calc(100vw - var(--sidebar-width-s) - 12px);
+    background-color: rgba(235, 15, 15, 0.24);
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width-s);
+    right: 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*! UTILS  */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display-none {
+    display: none;
+}
+
+/*! SECTIONS */
+
+/* SIDEBAR */

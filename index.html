@@ -29,47 +29,155 @@
 
 <body>
     
-    <!--! NAVIGATION BAR  -->
-    <nav>
-
-        <header class="logo"></header>
-
-        <section class="main-folders">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-
-        <!-- playlist section -->
-        <section class="playlists">
-            <h3>Playlist</h3>
-            <ul>
-                <li class="create-new-playlist"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-
-        <!-- navbar footer -->
-        <footer class="nav-bar-footer">
-            <div class="instal-app"></div>
-            <div class="user-info"></div>
-        </footer>
-
-    </nav>
-
     <!--! MAIN CONTENT -->
     <main>
 
-        <!-- HEADER upgrade bar -->
-        <header class="upgrade-bar"></header>
+        <!--! NAVIGATION SIDEBAR  -->
+        <nav id="sidebar">
+
+            <header class="sidebar-top">
+                <figure id="logo">
+                    <img id="logo-small" src="./img/logo-small.svg" alt="logo-spotify-small">
+                    <img class="display-none" id="logo-big" src="./img/logo.svg" alt="logo-spotify-big">
+                </figure>
+                <div class="main-folders">
+                    <ul>
+                        <li><a href=""><img src="./img/home.svg" alt="home"><span class="display-none">Home</span></a></li>
+                        <li><a href=""><img src="./img/search.svg" alt="search"><span class="display-none">Cerca</span></a></li>
+                        <li><a href=""><img src="./img/libreria.svg" alt="library"><span class="display-none">La tua libreria</span></a></li>
+                    </ul>
+                </div>
+                <!-- playlist section -->
+                <section id="playlists">
+                    <h3>Playlist</h3>
+                    <ul>
+                        <li class="create-new-playlist"></li>
+                        <li class="playlist-name"></li>
+                        <li class="playlist-name"></li>
+                        <li class="playlist-name"></li>
+                        <li class="playlist-name"></li>
+                        <li class="playlist-name"></li>
+                        <li class="playlist-name"></li>
+                        <li class="playlist-name"></li>
+                    </ul>
+                </section>
+            </header>
+
+
+            <!-- navbar-footer -->
+            <footer class="sidebar-footer">
+                <div class="instal-app"></div>
+                <div class="user-info"></div>
+            </footer>
+
+        </nav>
+
+        <!--! Header UPGRADE BAR -->
+        <header class="upgrade-bar">
+            <button></button>
+        </header>
+
+        <!--! MAIN CONTENT -->
+
+        <!-- sub-navigazione del main-->
+        <nav class="sub-nav">
+            <ul>
+                <li class="evidence"></li>
+                <li class="podcast"></li>
+                <li class="classification"></li>
+                <li class="kinds"></li>
+                <li class="new-releases"></li>
+                <li class="discover"></li>
+            </ul>
+        </nav>
+
+        <!-- sezione categorie in evidenza -->
+        <section id="cat-evidence">
+
+            <!-- ROW RECENTLY PLAYED -->
+            <div class="row" id="recently-played">
+                <h2 class="title"></h2>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                        <h5 class="playlist subtitle"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                        <h5 class="playlist subtitle"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                        <h5 class="playlist subtitle"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                        <h5 class="playlist subtitle"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                        <h5 class="playlist subtitle"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                        <h5 class="playlist subtitle"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW CREATO-PER-TE -->
+            <div class="row" id="for-you">
+                <h2 class="title"></h2>
+                <h5 class="subtitle"></h5>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW MOST POPULAR ARTITS -->
+            <div class="row" id="most-popular">
+                <h2 class="title"></h2>
+                <h5 class="subtitle"></h5>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="playlist-img" src="" alt="">
+                        <h3 class="playlist title"></h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
@@ -77,13 +185,43 @@
     <footer>
 
         <!-- player-left -->
-        <div class="player-left"></div>
+        <div class="player-left">
+            <figure class="now-playing-img">
+                <img src="" alt="">
+            </figure>
+            <h5 class="now-playing title"><a href="#"></a></h5>
+            <h6 class="now-playing subtitle"></h6>
+            <button class="fav"></button>
+            <button class="folder"></button>
+        </div>
 
         <!-- player-main -->
-        <div class="player-main"></div>
+        <div class="player-main">
+            
+            <!-- COMANDI PLAYER -->
+            <div class="commands">
+                <button class="shuffle"></button>
+                <button class="go-start"></button>
+                <button class="play-pause"></button>
+                <button class="go-end"></button>
+                <button class="replay"></button>
+            </div>
+            
+            <!-- AVANZAMENTO PLAYER  -->
+            <div>
+                <span class="ticker-progress"></span>
+                <span class="progress-bar"></span>
+                <span class="duration"></span>
+            </div>
+        </div>
         
         <!-- player-right -->
-        <div class="player-right"></div>
+        <div class="player-right">
+            <button class="songs-list"></button>
+            <button class="device"></button>
+            <button class="volume"></button>
+            <button class="volume-bar"></button>
+        </div>
 
     </footer>
 </body>
