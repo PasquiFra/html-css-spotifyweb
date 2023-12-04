@@ -52,20 +52,22 @@ footer {
 #sidebar {
     width: 50px;
     height: calc(100vh - var(--player-height));        
+    padding: 0 10px;
     
     background-color: black;
     
     position: fixed;
     left: 0;
     top: 0;
+    justify-content: space-between;
+    flex-direction: column;
 
-    padding: 10px;
 }
 
 .upgrade-bar {
     height: var(--player-height);
     width: calc(100vw - var(--sidebar-width-s) - 12px);
-    background-color: rgba(235, 15, 15, 0.24);
+    background-color: rgba(0, 0, 0, 0.24);
     position: fixed;
     top: 0;
     left: var(--sidebar-width-s);
@@ -80,17 +82,100 @@ a {
     text-decoration: none;
 }
 
+button {
+    text-transform: uppercase;
+}
+
 /*! UTILS  */
+
+.container-main {
+    width: calc(100vw - var(--sidebar-width-s));
+    
+    background-color: var(--color-dblue);
+    
+    position: absolute;
+    top: 0;
+    bottom: var(--player-height);
+    right: 0;    
+}
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .display-none {
     display: none;
 }
+.invisible {
+    visibility: hidden;
+}
 
-/*! SECTIONS */
+/*! --------------- SECTIONS ------------------- */
 
-/* SIDEBAR */
+/*! SIDEBAR */
+
+.sidebar-top {
+    flex-basis: 90%;
+}
+
+.sidebar-footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+
+    padding: 5px 0;
+
+    flex-basis: 10%;
+    height: 100px;
+}
+
+/* sidebar top settings */
+.sidebar-top {
+    flex-basis: 90%;
+}
+
+.sidebar-top>* {
+    padding: 8px 0;
+}
+
+
+
+/* sidebar footer settings */
+
+.instal-app {
+    text-align: center;
+}    
+.instal-app img{
+    height: 17px;
+    width: 17px;
+    transform: translateX(-1px);
+}
+
+.horiz-rule {
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    margin: 10px 0;
+}
+
+.user-info img{
+    height: 30px;
+    width: 30px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+/* UPGRADE */
+
+.upgrade-bar button {
+    border: 1px solid white;
+    border-radius: 30px;
+    
+    background-color: #ffffff00;
+    padding: 15px 40px;
+    color: white;
+    font-size: 0.8rem;
+
+    position: absolute;
+    top: 50%;
+    right: 5px ;
+    transform: translateY(-50%);
+}

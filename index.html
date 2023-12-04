@@ -33,9 +33,9 @@
     <main>
 
         <!--! NAVIGATION SIDEBAR  -->
-        <nav id="sidebar">
+        <nav class="flex" id="sidebar">
 
-            <header class="sidebar-top">
+            <div class="sidebar-top">
                 <figure id="logo">
                     <img id="logo-small" src="./img/logo-small.svg" alt="logo-spotify-small">
                     <img class="display-none" id="logo-big" src="./img/logo.svg" alt="logo-spotify-big">
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
                 <!-- playlist section -->
-                <section id="playlists">
+                <section class="display-none" id="playlists">
                     <h3>Playlist</h3>
                     <ul>
                         <li class="create-new-playlist"></li>
@@ -61,124 +61,232 @@
                         <li class="playlist-name"></li>
                     </ul>
                 </section>
-            </header>
+            </div>
 
 
             <!-- navbar-footer -->
-            <footer class="sidebar-footer">
-                <div class="instal-app"></div>
-                <div class="user-info"></div>
-            </footer>
+            <div class="sidebar-footer">
+                <div class="instal-app">
+                    <img src="./img/download.svg" alt="download">
+                    <span class="display-none">Installa app</span>
+                </div>
+                <div class="horiz-rule invisible"></div>
+                <div class="user-info">
+                    <img src="./img/profile.svg" alt="profile">
+                    <span class="profile-name display-none">Pasqui</span>
+                </div>
+            </div>
 
         </nav>
 
-        <!--! Header UPGRADE BAR -->
-        <header class="upgrade-bar">
-            <button></button>
-        </header>
-
+        
         <!--! MAIN CONTENT -->
+        <div class="container-main">
+            <!--! Header UPGRADE BAR -->
+            <header class="upgrade-bar">
+                <button>Effettua l'upgrade</button>
+            </header>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus culpa, nihil totam nisi debitis quo aliquam deserunt modi repudiandae, beatae iure, molestiae perspiciatis facere quis aperiam laudantium quia voluptatem eligendi?
+            Magni modi nostrum iste suscipit, deserunt odit totam ea officiis autem eius voluptatibus delectus velit molestiae. Vel doloremque omnis, iusto, animi in blanditiis aspernatur deleniti temporibus architecto ducimus delectus repudiandae.
+            Nesciunt placeat corrupti molestias non nihil maxime natus? Illo voluptas deleniti eius exercitationem, soluta possimus architecto sequi laboriosam numquam accusantium reprehenderit quo voluptatum ipsa vel ullam cum? Suscipit, perferendis magni?
+            Magnam, illo. Expedita numquam velit, doloremque vero, voluptatum et omnis vitae alias unde nam at assumenda fuga veritatis, quis rerum sunt laborum molestiae impedit minima. Sint perspiciatis ex provident accusamus.
+            Officia laboriosam accusantium delectus quibusdam saepe sunt doloribus, eveniet fugiat ullam veritatis officiis, iusto eos. Cumque quidem aliquam sit dolore labore soluta, cum laudantium temporibus incidunt blanditiis? Debitis, ipsam ut!
+            Excepturi eius, itaque perspiciatis quod mollitia ipsa ex aperiam totam obcaecati magnam doloribus illum voluptates, earum voluptatum. Iure rem tempora veritatis quae, dolorum praesentium ullam velit, totam sed assumenda laudantium?
+            Explicabo fugiat vel labore et ad tenetur molestias dicta veniam, iure inventore assumenda id culpa sequi laborum illum minus maxime magnam expedita iusto nisi officia, animi eveniet harum? Nulla, unde.
+            Aut, eos! Rerum hic exercitationem assumenda repellendus nulla reiciendis blanditiis debitis veniam atque, autem tempora quaerat iste illo illum doloribus quas est culpa. Libero facilis perferendis fugiat pariatur! Quod, cum.
+            A, debitis harum consectetur dignissimos, est tempora perspiciatis enim, odit accusamus veritatis quas vel iure alias rem aspernatur? Quibusdam tempora excepturi eaque numquam dolorem impedit aliquam minus reiciendis ab odio.
+            Illum quaerat soluta fugiat, quia at libero esse vitae, explicabo sunt veniam magni, voluptatem ab? Alias quisquam rerum similique odio odit eveniet. Labore non minus corporis consequatur quod illum mollitia.
+            Mollitia saepe error accusamus nemo vitae recusandae eum. Pariatur, nihil nesciunt aut sed impedit id magni mollitia sapiente excepturi aliquid voluptatum! Laborum nulla iusto delectus sequi distinctio sint eaque porro.
+            Velit, odio ratione, nemo amet necessitatibus, error dolorem fugiat eum dignissimos quod quaerat nisi veritatis nulla minus minima pariatur voluptates libero quam non porro eaque? Tempora magnam nemo sit praesentium.
+            Corporis perferendis consequatur dolores omnis odio tempora, quis saepe eius. A adipisci vitae qui odit dolore placeat laudantium, natus laborum, exercitationem soluta facere, ut facilis ad architecto eligendi pariatur sapiente.
+            Autem minima earum magni porro dignissimos amet laborum quibusdam labore quae ipsa perspiciatis ipsam obcaecati harum molestias dolorum ab quidem, beatae temporibus asperiores incidunt nam? Placeat rem aliquam excepturi exercitationem?
+            Nam nemo quae unde eveniet eos aut beatae repellendus, veniam quibusdam quis sed magni nulla facere ut error ea molestiae provident ipsa placeat ratione cupiditate eum ex nisi quidem! Officiis.
+            Voluptates quas, soluta magni odio nihil dolore autem voluptate deserunt, illum mollitia corrupti fugit. Iusto ipsa debitis hic in ullam optio esse iste sint aspernatur sunt, odit doloribus ab enim.
+            Distinctio necessitatibus dicta ducimus eius consectetur amet nesciunt et laudantium. Reprehenderit neque quisquam repudiandae ipsa assumenda, tempore incidunt at, nobis animi culpa libero illum, rerum dolore magni? Asperiores, officiis itaque?
+            Maxime, consequatur omnis iste nihil dolorem ducimus corporis quo ab repellendus? Sint iusto cum, vero iure id, minus porro ex corporis beatae accusamus eum illum quas aut officiis debitis minima.
+            Animi similique quod temporibus accusantium rerum officiis recusandae in molestiae consectetur. Asperiores doloremque, nesciunt quaerat temporibus quisquam sint corporis eos mollitia, provident aut dolorem! Et sunt velit accusamus distinctio recusandae?
+            Est nesciunt adipisci sed? Aut optio cumque consequuntur sequi, veritatis nam minus illum eum quidem sint eos deleniti quibusdam nesciunt. Soluta molestias sed, dolorem officia deserunt rerum tenetur aliquid maiores.
+            Sint sunt animi recusandae quasi fugit velit molestiae, obcaecati voluptates libero numquam rem laboriosam aliquam autem excepturi quia aperiam temporibus commodi est quaerat unde quam itaque sit? Cupiditate, ipsam esse?
+            Eos dolor rerum iste nobis iusto molestias vero provident repudiandae, aut obcaecati neque nulla quas tempore repellat nostrum ipsam ipsum voluptatum alias pariatur, quia cupiditate, sed dolore! Dolores, similique culpa.
+            Ipsum excepturi quis ipsam, odio totam at adipisci iusto vitae sapiente nobis inventore explicabo magni provident tempora, commodi illum a deserunt rem, nulla illo dignissimos atque laudantium. At, vel dignissimos.
+            Qui, natus aliquam voluptate tempora deserunt mollitia! Temporibus vero asperiores labore assumenda eaque at esse deserunt, itaque perferendis perspiciatis sint maxime eius. Rem voluptatum dolorum ipsum adipisci deserunt. Quidem, commodi.
+            Quo molestias reprehenderit eligendi necessitatibus velit voluptas consequuntur itaque eaque excepturi iusto, sequi nihil tempora exercitationem natus maxime atque, molestiae, repellat obcaecati veniam ex ipsa. Nihil reprehenderit doloremque dolor nostrum!
+            Aliquid, dicta accusantium? Vero qui quasi alias magnam consequuntur aliquam. Officiis, repudiandae impedit? Veniam quo nulla officiis nihil dolorum illum odit molestiae excepturi, ratione maxime ipsum explicabo commodi accusantium ipsa?
+            In doloribus molestias recusandae rem at ea quae dolores dolorem. Necessitatibus cum, deserunt impedit reiciendis vel tempore soluta maxime quasi itaque? Dolore rem quae veniam odit pariatur ex architecto assumenda?
+            Veniam, delectus, asperiores facilis non fugit molestias hic labore atque magnam doloribus porro maiores culpa minus aperiam corporis impedit, quos esse laboriosam! Suscipit nemo hic nesciunt saepe, excepturi ipsum culpa!
+            Quas voluptas corrupti ipsam maxime expedita neque, odio qui eaque tempore distinctio. Nemo tempora recusandae quos beatae dicta sapiente vitae, saepe magni sequi. Illo et similique, ea atque enim accusantium.
+            Totam eaque omnis recusandae ducimus aliquid asperiores repellat ab iure, blanditiis officiis est eius neque, sequi nobis quasi fugit inventore, voluptatibus libero! Nostrum adipisci sapiente animi rerum repellendus perferendis quis.
+            Dolore sapiente exercitationem atque, sit consequuntur nam maiores molestias accusamus dolorem eligendi veniam dolor vel libero aspernatur maxime, iusto quas non neque adipisci quaerat repudiandae beatae quo recusandae perspiciatis. Unde.
+            Ipsam placeat ducimus, eaque voluptate, deserunt natus suscipit officiis quod nesciunt animi iste unde repudiandae, reprehenderit dolor? Delectus consequatur quas commodi optio perspiciatis accusamus suscipit fugiat quam. Pariatur, adipisci debitis.
+            Quibusdam quam sequi asperiores, repudiandae explicabo minus cupiditate! Sunt placeat vero voluptatibus, suscipit molestiae non et dicta distinctio corporis eius vitae modi in labore! Magni velit magnam expedita error quas!
+            Exercitationem iusto eius neque modi omnis? Voluptatem modi cumque enim! Quisquam cumque odio rerum dolorem reiciendis fugiat, praesentium consectetur nesciunt nam repellat. Architecto facere quisquam voluptas atque explicabo voluptatem modi.
+            Magnam amet, quis necessitatibus, unde aut officiis consequuntur at rerum aspernatur obcaecati quo recusandae? Doloribus explicabo delectus distinctio quos veniam inventore deleniti doloremque quae, nihil soluta. Tempore impedit consectetur eos?
+            Veniam beatae voluptas error quidem consequuntur rerum voluptate repudiandae quasi, laboriosam perspiciatis, commodi expedita distinctio iusto praesentium quia. Vitae nostrum aliquam, molestias dolor placeat inventore itaque ea voluptatem quidem ut!
+            Consequatur maxime sequi repellat ex optio veniam aperiam eveniet sit similique. Recusandae in repellendus pariatur doloribus ad porro eveniet ullam eligendi nesciunt repellat! Facere, ad non. Amet blanditiis possimus accusamus.
+            Voluptate, ab voluptas ipsam, voluptatem deserunt non odio, veniam laborum porro ullam natus quis cumque quas? Similique minus ex non nobis dolore veniam, inventore magnam animi voluptate a molestiae ea?
+            Recusandae cumque tempore laborum debitis? Animi molestias nemo, labore excepturi explicabo incidunt itaque accusamus placeat, reiciendis optio ducimus, atque nihil sint. Voluptate necessitatibus maxime debitis nihil quos. Quo, quam in.
+            Vitae quasi repellat aspernatur facilis porro! Sequi dolorem sed praesentium ab possimus beatae veniam asperiores mollitia quis explicabo. Voluptate, suscipit aliquam perferendis inventore dolorum eius excepturi ducimus quaerat? Distinctio, beatae.
+            Ad molestias pariatur ut repellendus nobis eaque voluptatum molestiae debitis asperiores dolore? Neque qui corporis dolor dolores temporibus porro ad, autem illo, fugiat expedita iste? Natus nesciunt ut cum pariatur?
+            Illo dolorum quas autem, quidem, accusantium a modi tempore tenetur pariatur quaerat possimus eum fuga libero nisi voluptate dolor impedit. Earum tempora natus velit quia perferendis quos obcaecati libero rem.
+            Dignissimos libero cum officiis in sed corporis iusto commodi? Dolorem, veniam nisi. Perferendis hic quia perspiciatis debitis, incidunt assumenda exercitationem accusantium illo enim nam ad, quasi corporis eveniet reiciendis tenetur.
+            Quo, vero! Ducimus culpa maiores quasi consequuntur beatae est animi, quibusdam laborum at impedit temporibus magnam iure, ratione dolore itaque expedita eligendi facere. Laudantium soluta blanditiis modi ex velit. Hic?
+            Asperiores dolores natus, exercitationem, quas vero suscipit voluptatibus maxime eaque veniam maiores qui officiis ab obcaecati ipsam quasi amet nihil vitae ipsa commodi aspernatur eius! Nulla fugit temporibus consequatur nihil.
+            Aut voluptatem maxime officiis alias odio, iure obcaecati earum dignissimos repellendus reprehenderit, porro eligendi labore illo quisquam repudiandae necessitatibus explicabo eum debitis voluptates? Aut nemo obcaecati mollitia dolorum esse consectetur.
+            Odit iste alias qui, deleniti deserunt magnam assumenda necessitatibus cum eaque obcaecati sunt asperiores id eius, explicabo fugit voluptatem doloribus quidem hic eos veritatis aliquam quia dolorem sit! Illo, officiis.
+            Saepe sequi, voluptatibus nostrum repudiandae provident corporis harum reprehenderit sapiente unde eius sed consequatur, sint aliquid ipsam dignissimos eveniet in ab! Aliquam est maxime sunt ratione incidunt eaque autem consequuntur.
+            Magni sed vero eaque beatae doloremque earum impedit neque placeat ipsam cumque unde odio, possimus iure? Cupiditate sapiente architecto ducimus iste natus? Unde ipsa exercitationem qui velit aut, cum amet.
+            Voluptates voluptatem labore quos illum laudantium deserunt, delectus odio sit dolorem iure porro! Ducimus beatae consectetur debitis magni ea temporibus, vel dicta dolore deserunt, tenetur iure exercitationem minus asperiores incidunt.
+            Odit quod recusandae fugit iure tempora velit magnam aliquam cupiditate fugiat, rem, omnis quos illum non tenetur hic rerum eius. Aliquid reiciendis eaque velit impedit debitis assumenda consectetur quam molestias.
+            Facilis expedita perferendis doloribus sequi commodi voluptates vel deleniti rem nisi at, blanditiis omnis rerum eligendi eos neque autem vitae corporis quam quisquam quaerat temporibus officiis distinctio. Adipisci, beatae debitis!
+            Sapiente corporis soluta culpa, totam in dicta asperiores praesentium quam, nam optio alias quae et architecto est nihil? Excepturi, laborum nesciunt molestiae temporibus repudiandae accusamus porro maiores nemo tempora est.
+            Alias possimus adipisci quaerat repellat deserunt animi quia incidunt veritatis numquam. Molestiae totam illum nesciunt fuga quidem! Qui pariatur, obcaecati modi ipsum magnam facere reprehenderit quidem ut hic amet natus.
+            In et unde quaerat, quae sunt repellendus eum aliquam amet voluptatem distinctio eveniet, odit impedit est maxime vero sit voluptatibus eos veritatis illum quod, deleniti molestias repudiandae. Omnis, in. Repellendus.
+            Dolore consectetur quo possimus dicta, obcaecati ex nihil dignissimos modi sunt vero mollitia aspernatur doloremque vel asperiores ad, maxime assumenda excepturi et accusamus hic dolorem voluptas consequatur? Voluptatum, dolore error.
+            Reiciendis neque labore, amet ratione magni repellendus totam natus explicabo fugiat aut fugit id ipsum vitae molestias dolore similique! Illo, iste voluptatem. Repellendus in assumenda provident sint quibusdam repellat quisquam!
+            Ex enim suscipit pariatur recusandae porro, consequuntur deleniti alias ratione officiis nihil quia mollitia voluptate nesciunt dolore voluptatum delectus at tenetur saepe atque obcaecati optio. Expedita nesciunt itaque ullam quibusdam.
+            Optio nihil adipisci, assumenda quae quam eos rem ab facilis, magnam molestias provident, natus consequuntur quia quibusdam. Qui, numquam. Qui sed perspiciatis quam assumenda suscipit molestias voluptate dicta esse. Nobis!
+            Aspernatur inventore porro sit eligendi. Possimus dolorum perferendis quod sint enim corrupti ratione blanditiis hic adipisci? Distinctio aliquam, blanditiis beatae sint nesciunt nostrum suscipit dolor. Enim dolorum laborum vitae suscipit.
+            Deserunt cumque tenetur, eos reiciendis nihil nisi minus expedita porro molestiae excepturi distinctio tempore repellendus aliquid magnam consectetur, vel sunt fuga enim dolor. Eveniet perferendis deserunt sunt maiores alias aperiam.
+            Perspiciatis neque, inventore blanditiis asperiores beatae enim recusandae ipsam, aspernatur ipsum doloribus assumenda expedita adipisci tenetur harum id commodi, fuga sunt quis dicta odit. Laborum omnis facilis sapiente soluta assumenda.
+            Illum deleniti ea odit itaque, ipsam facilis numquam eaque at. Quod ipsa eum eius alias qui ducimus voluptate libero laboriosam minus magnam, esse quasi incidunt voluptates mollitia adipisci excepturi inventore!
+            Corporis consequuntur repellendus laborum dolore explicabo tempore, quibusdam nulla doloribus a, repudiandae nostrum perspiciatis eligendi debitis sequi itaque non assumenda, asperiores similique! Laudantium error placeat modi laboriosam similique eveniet nemo.
+            Quasi nemo voluptate minima non minus deleniti cum assumenda ex quaerat illo, similique qui sed corporis labore dolor voluptatibus vero, explicabo culpa. Exercitationem ad nesciunt aliquid ullam est incidunt porro!
+            Rerum quam corporis, quia omnis tenetur deleniti facilis praesentium perferendis doloribus quisquam incidunt impedit qui a. Iure, optio! Dolorem asperiores enim corrupti sed ipsa maxime ab illo temporibus ullam nulla!
+            Ipsa illo architecto iusto quae perferendis beatae provident corporis itaque rerum earum saepe laboriosam, laudantium ipsam reprehenderit eos nisi! Ducimus atque accusantium nobis quo eum similique magni delectus, rerum aliquid?
+            Nisi, facilis voluptas! Minus quibusdam temporibus repellendus optio fugiat asperiores neque officiis nemo, aperiam, cupiditate dolore obcaecati, iste sapiente ipsam molestiae aliquid. Suscipit doloribus quidem neque quos repellat odio fugit.
+            A quae maiores odit recusandae animi quas laboriosam officiis ipsum reprehenderit enim dignissimos illum, adipisci asperiores rem illo nihil consequatur, ad atque id fuga? Omnis inventore aspernatur quaerat fugiat dolore.
+            Provident eligendi aliquid quae, possimus aspernatur soluta voluptatem doloremque iusto quibusdam, tenetur illo tempore eveniet culpa dolores quos temporibus cum delectus praesentium earum error quo? Vel temporibus id voluptate nam!
+            Maxime autem inventore deserunt facilis accusantium tenetur unde vitae corrupti at perferendis ex et illum expedita quidem porro, ipsa error voluptatum explicabo voluptates? Corrupti itaque delectus neque impedit assumenda voluptas?
+            Tempora autem rerum laborum rem nihil ut consequuntur hic expedita commodi, velit laudantium facilis quae voluptatibus culpa, repellat repellendus blanditiis consequatur recusandae porro sunt. Magnam pariatur tempora quo perferendis modi!
+            Suscipit in iste officiis blanditiis voluptatem ipsam modi dolore vero a aliquam? Suscipit nulla doloremque cumque sed vel, tenetur magnam nam tempora perspiciatis quod ipsam cum minima perferendis inventore natus.
+            Ullam ut alias ea. Nisi iusto consequatur dolore? Cum quod odit similique dignissimos dolores, illo error in a doloremque aperiam magnam veniam ea ratione natus perspiciatis iure molestiae. Odio, sit.
+            Nisi unde vero delectus dolores similique, reprehenderit fugiat atque quam, repellat facere nulla eos veritatis quaerat praesentium mollitia recusandae. Rem est, et explicabo magni praesentium eligendi dolorem ex quaerat. Possimus.
+            Corporis vel distinctio reprehenderit, sit similique dignissimos commodi rem, excepturi asperiores laborum expedita iste unde tempore? Quidem ducimus ad nam quos, repudiandae iusto cum, cumque a minus officia minima. Eveniet.
+            Excepturi consectetur vero amet ipsam doloremque optio quidem exercitationem explicabo labore quo, officia consequatur quibusdam, nostrum dolores reprehenderit quia vitae ipsum eaque itaque aliquid et eveniet laudantium veritatis necessitatibus? Sed.
+            Perferendis officia, similique nemo molestias harum dicta dolorem, alias voluptate adipisci magni numquam accusantium neque assumenda, nam perspiciatis. Perferendis necessitatibus fuga, impedit dolores quasi obcaecati nemo vero ratione libero amet?
+            Quo mollitia architecto quasi veniam, sunt esse tempore ipsum iusto a aperiam quae saepe omnis nobis, dignissimos, fugiat illo deleniti doloribus ea officia ut exercitationem velit accusantium nostrum? Iure, id.
+            Voluptates in eligendi accusamus ab nobis omnis laborum tempore totam vel sed nulla laudantium a dolor aspernatur animi asperiores, perspiciatis deleniti sapiente. Reprehenderit quas architecto beatae facilis quod eaque nesciunt.
+            Doloribus in et cumque autem aspernatur, amet nostrum nemo. Nam nisi neque dolore doloribus modi, animi doloremque fugiat reiciendis officiis illo voluptate, saepe molestias sed at ex aliquid, autem fuga.
+            Exercitationem placeat eligendi id. Maxime architecto magnam unde aspernatur impedit illum corporis, aliquam quas beatae pariatur veritatis molestiae quos est enim, totam, placeat iusto aut recusandae commodi ipsa saepe. Fuga?
+            Quis necessitatibus et optio provident molestias voluptates, voluptas sint in modi repudiandae mollitia enim dicta vero possimus dolorem, ullam pariatur labore eos ut excepturi ipsa eius perferendis officia. Enim, illum.
+            Unde doloribus recusandae illo ad corporis dolor eos ipsa quam obcaecati adipisci molestiae, suscipit atque facilis amet possimus cum saepe, esse officia, veritatis voluptatum repudiandae delectus iusto sit explicabo. Harum?
+            Optio pariatur veritatis accusantium, aut sint, eveniet eius, non culpa magni perspiciatis et unde quia natus totam odio nobis quae ipsa soluta? Molestiae iste ab architecto blanditiis distinctio ipsum id?
+            Eligendi, laborum cumque dolores molestiae facere eos, fugiat odio ab laboriosam dolorum nulla, impedit quo veritatis asperiores adipisci dolorem quisquam pariatur maiores velit. Animi, eum. Repellendus distinctio explicabo aspernatur repellat?
+            Exercitationem sint commodi incidunt blanditiis odit. Iure deserunt quaerat sequi distinctio tenetur quidem, sunt officiis rem sed itaque ipsa nisi fuga amet fugiat aperiam aut quo magni id harum reprehenderit.
+            Harum consectetur reprehenderit eum. Explicabo aspernatur, natus accusantium perspiciatis assumenda mollitia nemo tempora nobis, fuga quam exercitationem unde repellat atque facilis iste culpa enim ex tempore. Vel tempora distinctio molestias!
+            Eum eligendi magni esse. Quasi rerum quo beatae quod molestias ab repudiandae laborum vel autem, placeat, nostrum error obcaecati accusamus quidem atque sint velit quos, quam numquam eaque ad eius!
+            Distinctio perferendis dicta eveniet ipsa sed illum. Consequuntur voluptatem architecto explicabo tenetur ex deserunt distinctio rerum dignissimos ipsam repellat id, eum nihil voluptatum accusamus vitae maiores atque cupiditate temporibus. Nihil.
+            Cupiditate error aspernatur incidunt quibusdam aperiam qui autem totam! Dolore iure perferendis est quaerat ipsam repellendus sint delectus maiores praesentium debitis, autem fugiat quas voluptas quam placeat doloremque nulla architecto.
+            Blanditiis ipsa quo aliquid eveniet praesentium quaerat veritatis amet maxime corporis fuga quas, illo iure cumque tenetur corrupti sint unde! Minus, blanditiis dignissimos ullam illo qui adipisci ipsa repellat sapiente.
+            Labore facilis quaerat quas necessitatibus aliquam aliquid consequuntur tenetur ipsa neque obcaecati voluptates dignissimos, aut enim mollitia excepturi quidem illo perferendis eum iste deleniti. Ratione dolores nesciunt reprehenderit voluptates fugit.
+            Debitis reiciendis cum quis illo soluta quaerat inventore facilis similique odio accusamus tempora at error aspernatur enim hic earum odit distinctio excepturi, aut vel. Repellendus fugit asperiores unde totam possimus.
+            Dignissimos asperiores similique debitis voluptates quasi dolorem, et, ab numquam facilis provident repellendus? Eveniet odio voluptatum, doloremque odit minima alias porro fugit culpa explicabo, dolorum in aspernatur, veritatis quia sit.
+            Est aperiam ipsa cum nemo quisquam? Temporibus deserunt quaerat doloremque commodi voluptate hic id repellat optio fuga itaque laboriosam nesciunt nobis, eveniet, quis delectus! Itaque labore porro quaerat possimus eaque?
+            Fugiat tempore nobis reprehenderit ut modi eaque maxime, laboriosam voluptatem fugit impedit sunt voluptatum qui eos facilis cumque nihil incidunt inventore dolores necessitatibus. Omnis repellendus provident eveniet autem! Fugiat, eligendi.
+            Blanditiis dolor minus praesentium deserunt perferendis voluptatem! Dignissimos neque ut unde voluptatum corrupti laudantium accusantium quam. Totam aliquid quam deleniti est illum, dolores laborum. Voluptas possimus quis labore consectetur exercitationem.
+            Magnam nostrum ab totam porro vero ut, nihil doloribus voluptates rem voluptatibus molestias perspiciatis voluptas libero quaerat explicabo veritatis maiores. Sapiente eius at fugiat numquam, eos perferendis quas magni perspiciatis.
+            Minima libero fuga quasi ipsum facere officia est corporis qui. Ea corrupti libero sunt, soluta natus, necessitatibus numquam quae nulla facere quibusdam cum reprehenderit assumenda magnam? Corrupti voluptatem omnis voluptatum.</p> -->
+           
+            <!-- sub-navigazione del main-->
+            <nav class="sub-nav">
+                <ul>
+                    <li class="evidence"></li>
+                    <li class="podcast"></li>
+                    <li class="classification"></li>
+                    <li class="kinds"></li>
+                    <li class="new-releases"></li>
+                    <li class="discover"></li>
+                </ul>
+            </nav>
 
-        <!-- sub-navigazione del main-->
-        <nav class="sub-nav">
-            <ul>
-                <li class="evidence"></li>
-                <li class="podcast"></li>
-                <li class="classification"></li>
-                <li class="kinds"></li>
-                <li class="new-releases"></li>
-                <li class="discover"></li>
-            </ul>
-        </nav>
+            <!-- sezione categorie in evidenza -->
+            <section id="cat-evidence">
 
-        <!-- sezione categorie in evidenza -->
-        <section id="cat-evidence">
+                <!-- ROW RECENTLY PLAYED -->
+                <div class="row" id="recently-played">
+                    <h2 class="title"></h2>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                            <h5 class="playlist subtitle"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                            <h5 class="playlist subtitle"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                            <h5 class="playlist subtitle"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                            <h5 class="playlist subtitle"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                            <h5 class="playlist subtitle"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                            <h5 class="playlist subtitle"></h3>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- ROW RECENTLY PLAYED -->
-            <div class="row" id="recently-played">
-                <h2 class="title"></h2>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                        <h5 class="playlist subtitle"></h3>
+                <!-- ROW CREATO-PER-TE -->
+                <div class="row" id="for-you">
+                    <h2 class="title"></h2>
+                    <h5 class="subtitle"></h5>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                        <h5 class="playlist subtitle"></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                        <h5 class="playlist subtitle"></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                        <h5 class="playlist subtitle"></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                        <h5 class="playlist subtitle"></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                        <h5 class="playlist subtitle"></h3>
-                    </div>
-                </div>
-            </div>
 
-            <!-- ROW CREATO-PER-TE -->
-            <div class="row" id="for-you">
-                <h2 class="title"></h2>
-                <h5 class="subtitle"></h5>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
+                <!-- ROW MOST POPULAR ARTITS -->
+                <div class="row" id="most-popular">
+                    <h2 class="title"></h2>
+                    <h5 class="subtitle"></h5>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="" alt="">
+                            <h3 class="playlist title"></h3>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                    </div>
-                </div>
-            </div>
 
-            <!-- ROW MOST POPULAR ARTITS -->
-            <div class="row" id="most-popular">
-                <h2 class="title"></h2>
-                <h5 class="subtitle"></h5>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img class="playlist-img" src="" alt="">
-                        <h3 class="playlist title"></h3>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
+            </section>
+        </div>
     </main>
 
     <!--! PLAYER  -->
