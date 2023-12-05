@@ -1,0 +1,40 @@
+/*! CSS PROPERTIES */
+
+:root {
+    --color-dblue:#141922;
+    --color-dgray: #282828;
+    --color-white: #ffffff;
+    --color-lgray: #8b8787;
+    --color-gray: #686565;
+    
+    --main-title-font: 0.8rem;
+    --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
+    --song-subtitle-font: 0.8rem;
+
+    --player-height: 80px;
+    --sidebar-width-s: 50px;
+    --sidebar-width-l: 250px;
+
+
+    --font-2xs: .6rem;
+    --font-xs: .7rem;
+    --font-s: .8rem;
+    --font-m: 1rem;
+    --font-ml: 1.2rem;
+    --font-l: 1.5rem;
+    --font-xl: 1.8rem;
+    --font-2xl: 2.3rem;
+    
+    
+    --spacing-xs: .5rem;
+    --spacing-s: .8rem;
+    --spacing-m: 1rem;
+   }
+
+
+@media screen and (min-width:700px) {
+    
+    #sidebar {
+        width: 250px;
+    }
+}

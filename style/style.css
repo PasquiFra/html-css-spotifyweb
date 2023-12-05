@@ -33,10 +33,6 @@
 
 /*! FONT AWESOME */
 
-.wrapper {
-    height: calc(100vh - var(--player-height));
-}
-
 /*! GENERAL RULES  */
 
 * {
@@ -134,6 +130,10 @@ img {
 }
 
 /*! UTILS  */
+
+.wrapper {
+    height: calc(100vh - var(--player-height));
+}
 
 .container-main {
     flex-basis: 100%;

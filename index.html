@@ -30,173 +30,171 @@
 <body>
     
     <!--! MAIN CONTENT -->
-    <main>
+    <main class="wrapper flex">
 
-        <div class="wrapper flex">
+        <!--! NAVIGATION SIDEBAR  -->
+        <nav class="flex" id="sidebar">
 
-            <!--! NAVIGATION SIDEBAR  -->
-            <nav class="flex" id="sidebar">
-
-                <!-- sidebar TOP -->
-                <div class="sidebar-top">
-                    <figure id="logo">
-                        <img id="logo-small" src="./img/logo-small.svg" alt="logo-spotify-small">
-                        <img class="display-none" id="logo-big" src="./img/logo.svg" alt="logo-spotify-big">
-                    </figure>
-                    <div class="main-folders">
-                        <ul>
-                            <li><a href=""><img src="./img/home.svg" alt="home"><span class="display-none">Home</span></a></li>
-                            <li><a href=""><img src="./img/search.svg" alt="search"><span class="display-none">Cerca</span></a></li>
-                            <li><a href=""><img src="./img/libreria.svg" alt="library"><span class="display-none">La tua libreria</span></a></li>
-                        </ul>
-                    </div>
-                    <!-- playlist section -->
-                    <section class="display-none" id="playlists">
-                        <h3>Playlist</h3>
-                        <ul>
-                            <li class="create-new-playlist"><i class="fa-solid fa-plus"></i> Crea Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                            <li class="playlist-name">Nome Playlist</li>
-                        </ul>
-                    </section>
-                </div>
-
-
-                <!-- sidebar BOTTOM -->
-                <div class="sidebar-bottom">
-                    <div class="instal-app">
-                        <img src="./img/download.svg" alt="download">
-                        <span class="display-none">Installa app</span>
-                    </div>
-                    <div class="horiz-rule invisible"></div>
-                    <div class="user-info">
-                        <img src="./img/profile.svg" alt="profile">
-                        <span class="profile-name display-none">Pasqui</span>
-                    </div>
-                </div>
-
-            </nav>
-
-            
-            <!--! MAIN CONTENT -->
-            <div class="container-main">
-                
-                <!--! Header UPGRADE BAR -->
-                <header class="upgrade-bar">
-                    <button>Effettua l'upgrade</button>
-                </header>            
-
-                <!--! sub-navigazione del main-->
-                <nav class="sub-nav">
-                    <ul class="flex">
-                        <li class="evidence"><a href="#">IN EVIDENZA</a></li>
-                        <li class="podcast"><a href="#">PODCAST</a></li>
-                        <li class="classification"><a href="#">CLASSIFICHE</a></li>
-                        <li class="kinds"><a href="#">GENERI E MOOD</a></li>
-                        <li class="new-releases"><a href="#">NUOVE USCITE</a></li>
-                        <li class="discover"><a href="#">SCOPRI</a></li>
+            <!-- sidebar TOP -->
+            <div class="sidebar-top">
+                <figure id="logo">
+                    <img id="logo-small" src="./img/logo-small.svg" alt="logo-spotify-small">
+                    <img class="display-none" id="logo-big" src="./img/logo.svg" alt="logo-spotify-big">
+                </figure>
+                <div class="main-folders">
+                    <ul>
+                        <li><a href=""><img src="./img/home.svg" alt="home"><span class="display-none">Home</span></a></li>
+                        <li><a href=""><img src="./img/search.svg" alt="search"><span class="display-none">Cerca</span></a></li>
+                        <li><a href=""><img src="./img/libreria.svg" alt="library"><span class="display-none">La tua libreria</span></a></li>
                     </ul>
-                </nav>
-
-                <!--! sezione categorie in evidenza -->
-                <section id="cat-evidence">
-                    <!-- ROW RECENTLY PLAYED -->
-                    <div class="row flex wrap" id="recently-played">
-                        <div class="cat-header">
-                            <h2 class="title">Recently played</h2>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/metal_lifting.jpg" alt="heavy metal">
-                                <h3 class="playlist title">Heavy Metal</h3>
-                                <h5 class="playlist subtitle">Subtitle</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/stranger.jpeg" alt="stranger things">
-                                <h3 class="playlist title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                                <h5 class="playlist subtitle">Kyle Dixon & Michael Stein</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/aquietplace.jpeg" alt="A quiet place">
-                                <h3 class="playlist title">A quiet place</h3>
-                                <h5 class="playlist subtitle">Subtitle</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/split.jpeg" alt="split">
-                                <h3 class="playlist title">Split</h3>
-                                <h5 class="playlist subtitle">Subtitle</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/cure.jpeg" alt="a cure for wellness">
-                                <h3 class="playlist title">A cure for wellness</h3>
-                                <h5 class="playlist subtitle">Subtitle</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/sinister.jpeg" alt="Sinister">
-                                <h3 class="playlist title">Sinister</h3>
-                                <h5 class="playlist subtitle">Subtitle</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ROW CREATO-PER-TE -->
-                    <div class="row flex wrap" id="for-you">
-                        <div class="cat-header">
-                            <h2 class="title">Creato per Pasqui</h2>
-                            <h5 class="subtitle">Più ascolti, più accurati saranno i suggerimenti</h5>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/radar.jpeg" alt="release radar">
-                                <h3 class="playlist title">Release Radar</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/mixdaily.jpeg" alt="Daily Mix 1">
-                                <h3 class="playlist title">Daily Mix 1</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ROW MOST POPULAR ARTITS -->
-                    <div class="row flex wrap" id="most-popular">
-                        <div class="cat-header">
-                            <h2 class="title">Artisti più popolari</h2>
-                            <h5 class="subtitle">Più ascolti, più accurati saranno i suggerimenti</h5>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/youg.jpeg" alt="youg">
-                                <h3 class="playlist title">Lana Del Rey</h3>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img class="playlist-img" src="./img/einaudi.jpeg" alt="einaudi">
-                                <h3 class="playlist title">Ludovico Einaudi</h3>
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
+                <!-- playlist section -->
+                <section class="display-none" id="playlists">
+                    <h3>Playlist</h3>
+                    <ul>
+                        <li class="create-new-playlist"><i class="fa-solid fa-plus"></i> Crea Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="playlist-name">Nome Playlist</li>
+                    </ul>
                 </section>
             </div>
+
+
+            <!-- sidebar BOTTOM -->
+            <div class="sidebar-bottom">
+                <div class="instal-app">
+                    <img src="./img/download.svg" alt="download">
+                    <span class="display-none">Installa app</span>
+                </div>
+                <div class="horiz-rule invisible"></div>
+                <div class="user-info">
+                    <img src="./img/profile.svg" alt="profile">
+                    <span class="profile-name display-none">Pasqui</span>
+                </div>
+            </div>
+
+        </nav>
+
+        
+        <!--! MAIN CONTENT -->
+        <div class="container-main">
+            
+            <!--! Header UPGRADE BAR -->
+            <header class="upgrade-bar">
+                <button>Effettua l'upgrade</button>
+            </header>            
+
+            <!--! sub-navigazione del main-->
+            <nav class="sub-nav">
+                <ul class="flex">
+                    <li class="evidence"><a href="#">IN EVIDENZA</a></li>
+                    <li class="podcast"><a href="#">PODCAST</a></li>
+                    <li class="classification"><a href="#">CLASSIFICHE</a></li>
+                    <li class="kinds"><a href="#">GENERI E MOOD</a></li>
+                    <li class="new-releases"><a href="#">NUOVE USCITE</a></li>
+                    <li class="discover"><a href="#">SCOPRI</a></li>
+                </ul>
+            </nav>
+
+            <!--! sezione categorie in evidenza -->
+            <section id="cat-evidence">
+                <!-- ROW RECENTLY PLAYED -->
+                <div class="row flex wrap" id="recently-played">
+                    <div class="cat-header">
+                        <h2 class="title">Recently played</h2>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/metal_lifting.jpg" alt="heavy metal">
+                            <h3 class="playlist title">Heavy Metal</h3>
+                            <h5 class="playlist subtitle">Subtitle</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/stranger.jpeg" alt="stranger things">
+                            <h3 class="playlist title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <h5 class="playlist subtitle">Kyle Dixon & Michael Stein</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/aquietplace.jpeg" alt="A quiet place">
+                            <h3 class="playlist title">A quiet place</h3>
+                            <h5 class="playlist subtitle">Subtitle</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/split.jpeg" alt="split">
+                            <h3 class="playlist title">Split</h3>
+                            <h5 class="playlist subtitle">Subtitle</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/cure.jpeg" alt="a cure for wellness">
+                            <h3 class="playlist title">A cure for wellness</h3>
+                            <h5 class="playlist subtitle">Subtitle</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/sinister.jpeg" alt="Sinister">
+                            <h3 class="playlist title">Sinister</h3>
+                            <h5 class="playlist subtitle">Subtitle</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW CREATO-PER-TE -->
+                <div class="row flex wrap" id="for-you">
+                    <div class="cat-header">
+                        <h2 class="title">Creato per Pasqui</h2>
+                        <h5 class="subtitle">Più ascolti, più accurati saranno i suggerimenti</h5>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/radar.jpeg" alt="release radar">
+                            <h3 class="playlist title">Release Radar</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/mixdaily.jpeg" alt="Daily Mix 1">
+                            <h3 class="playlist title">Daily Mix 1</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW MOST POPULAR ARTITS -->
+                <div class="row flex wrap" id="most-popular">
+                    <div class="cat-header">
+                        <h2 class="title">Artisti più popolari</h2>
+                        <h5 class="subtitle">Più ascolti, più accurati saranno i suggerimenti</h5>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/youg.jpeg" alt="youg">
+                            <h3 class="playlist title">Lana Del Rey</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="playlist-img" src="./img/einaudi.jpeg" alt="einaudi">
+                            <h3 class="playlist title">Ludovico Einaudi</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </div>
+
     </main>
 
     <!--! PLAYER  -->
