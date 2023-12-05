@@ -10,21 +10,29 @@
     --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
     --song-subtitle-font: 0.8rem;
 
-    --player-height: 100px;
+    --player-height: 80px;
     --sidebar-width-s: 50px;
     --sidebar-width-l: 250px;
 
 
+    --font-xs: .7rem;
     --font-s: .8rem;
     --font-m: 1rem;
-    --font-l: 3rem;
+    --font-ml: 1.2rem;
+    --font-l: 1.5rem;
+    --font-xl: 2rem;
     
     
+    --spacing-xs: .5rem;
+    --spacing-s: .8rem;
     --spacing-m: 1rem;
    }
 
 /*! FONT AWESOME */
 
+.wrapper {
+    height: calc(100vh - var(--player-height));
+}
 
 /*! GENERAL RULES  */
 
@@ -43,36 +51,31 @@ footer {
     height: var(--player-height);
     width: 100%;
     background-color: dodgerblue;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
 }
 
 #sidebar {
     width: 50px;
-    height: calc(100vh - var(--player-height));        
-    padding: 0 10px;
+    height: 100%;        
+    padding: 0 12px;
     
     background-color: black;
     
-    position: fixed;
-    left: 0;
-    top: 0;
+    flex-basis: 50px;
+    flex-shrink: 0;
     justify-content: space-between;
     flex-direction: column;
 
+    overflow: hidden;
 }
 
 .upgrade-bar {
     height: var(--player-height);
-    width: calc(100vw - var(--sidebar-width-s) - 12px);
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.24);
-    position: fixed;
+
+    position: sticky;
     top: 0;
-    left: var(--sidebar-width-s);
-    right: 12px;
 }
 
 ul {
@@ -87,24 +90,59 @@ a {
 
 button {
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+.title {
+    color: white;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--color-lgray);
+    font-size: var(--font-xs);
+}
+
+h2 {
+    font-size: var(--font-ml);
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: var(--font-s);
+    padding: 10px 0;
+} 
 
 /*! UTILS  */
 
 .container-main {
-    width: calc(100vw - var(--sidebar-width-s));
-    padding: 0 10px;
+    flex-basis: 100%;
+    height: calc(100vh - var(--player-height));
 
     background-color: var(--color-dblue);
-    
-    position: absolute;
-    top: 0;
-    bottom: var(--player-height);
-    right: 0;    
+    overflow: auto;
 }
 
 .flex {
     display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.row .col {
+    flex-basis: 50%;
+    text-align: center;
+    margin: - var(--spacing-xs);
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+}
+
+.row .card {
+    padding: var(--spacing-xs);
 }
 
 .display-none {
@@ -114,55 +152,51 @@ button {
     visibility: hidden;
 }
 
+
 /*! --------------- SECTIONS ------------------- */
 
 /*! SIDEBAR */
 
-.sidebar-top {
-    flex-basis: 90%;
-}
-
-.sidebar-footer {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-
-    padding: 5px 0;
-
-    flex-basis: 10%;
-    height: 100px;
-}
 
 /* sidebar top settings */
+
 .sidebar-top {
-    flex-basis: 90%;
+    flex-basis: 50%;
+
+    flex-shrink: 0;
 }
 
 .sidebar-top>* {
     padding: 8px 0;
 }
 
-
-
 /* sidebar footer settings */
+
+.sidebar-bottom {
+    padding: 5px 0;
+
+    flex-basis: 10%;
+    flex-shrink: 1;
+}
 
 .instal-app {
     text-align: center;
-}    
+}  
+
 .instal-app img{
-    height: 17px;
-    width: 17px;
-    transform: translateX(-1px);
+    height: 15px;
+    width: 15px;
+    transform: translateX(-2px);
 }
 
 .horiz-rule {
     border: 1px solid rgba(128, 128, 128, 0.8);
-    margin: 10px 0;
+    margin: 7px 0;
 }
 
 .user-info img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-color: #808080;
     border-radius: 50%;
 }
@@ -177,24 +211,23 @@ button {
     border-radius: 30px;
     
     background-color: #ffffff00;
-    padding: 15px 40px;
+    padding: 12px 40px;
     color: white;
     font-size: 0.8rem;
+    font-weight: 600;
 
     position: absolute;
-    top: 50%;
-    right: 5px ;
+    top: calc(0.5 * var(--player-height));
+    right: 15px ;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 /*  SUBNAV  */
-.sub-nav {
-    padding: calc(10px + var(--player-height)) 0 0 0;
-}
 
 .sub-nav ul {
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 }
 
 .sub-nav li{
@@ -211,4 +244,26 @@ button {
     width: 30px;
     margin: 3px auto;
     display: block;
+}
+
+/* ! CATEGORIE IN EVIDENZA */
+
+#cat-evidence {
+    justify-content: flex-start;
+    padding: var(--spacing-s);
+}
+
+.row .cat-header {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    padding-left: var(--spacing-xs);
+}
+
+#for-you h2,
+#most-popular h2 {
+    margin-bottom: var(--spacing-xs);
+}
+
+#most-popular img {
+    border-radius: 50%;
 }
