@@ -200,45 +200,54 @@
     </main>
 
     <!--! PLAYER  -->
-    <footer>
+    <footer class="player flex">
 
         <!-- player-left -->
-        <div class="player-left">
+        <div class="player-left flex">
             <figure class="now-playing-img">
-                <img src="" alt="">
+                <img src="./img/sinister.jpeg" alt="sinister">
             </figure>
-            <h5 class="now-playing title"><a href="#"></a></h5>
-            <h6 class="now-playing subtitle"></h6>
-            <button class="fav"></button>
-            <button class="folder"></button>
-        </div>
-
-        <!-- player-main -->
-        <div class="player-main">
-            
-            <!-- COMANDI PLAYER -->
-            <div class="commands">
-                <button class="shuffle"></button>
-                <button class="go-start"></button>
-                <button class="play-pause"></button>
-                <button class="go-end"></button>
-                <button class="replay"></button>
+            <div class="now-playing">
+                <h5 class="title"><a href="#">Sinister</a></h5>
+                <h6 class="subtitle">Brano</h6>
+                <h6 class="subtitle">Nome</h6>
             </div>
-            
-            <!-- AVANZAMENTO PLAYER  -->
-            <div>
-                <span class="ticker-progress"></span>
-                <span class="progress-bar"></span>
-                <span class="duration"></span>
+            <div class="now-playing-opt">
+                <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <button class="folder"><i class="fa-regular fa-folder"></i></button>
             </div>
         </div>
         
-        <!-- player-right -->
-        <div class="player-right">
-            <button class="songs-list"></button>
-            <button class="device"></button>
-            <button class="volume"></button>
-            <button class="volume-bar"></button>
+            
+        <!-- PLAYER CENTER -->
+        <div class="player-center flex">
+            <div class="commands flex">
+                <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="go-start"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play-pause"><i class="fa-regular fa-circle-play"></i></button>
+                <button class="go-end"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="replay"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            
+            <div class="player-progress flex">
+                <span class="ticker-progress">0:25</span>
+                <div class="progress-bar">  
+                    <div class="in-progress"></div>
+                    <div class="progress-tot"></div>
+                </div>
+                <span class="duration">4:35</span>
+            </div>
+        </div>
+    
+        <!-- PLAYER RIGHT -->
+        <div class="player-right flex">
+            <button class="songs-list"><i class="fa-solid fa-list-ul"></i></button>
+            <button class="device"><i class="fa-solid fa-desktop"></i></button>
+            <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
+            <div class="volume-bar">
+                <div class="vol-progress"></div>
+                <div class="vol-tot"></div>
+            </div>
         </div>
 
     </footer>

@@ -5,6 +5,7 @@
     --color-dgray: #282828;
     --color-white: #ffffff;
     --color-lgray: #8b8787;
+    --color-gray: #686565;
     
     --main-title-font: 0.8rem;
     --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
@@ -15,12 +16,14 @@
     --sidebar-width-l: 250px;
 
 
+    --font-2xs: .6rem;
     --font-xs: .7rem;
     --font-s: .8rem;
     --font-m: 1rem;
     --font-ml: 1.2rem;
     --font-l: 1.5rem;
-    --font-xl: 2rem;
+    --font-xl: 1.8rem;
+    --font-2xl: 2.3rem;
     
     
     --spacing-xs: .5rem;
@@ -50,8 +53,11 @@ body {
 footer {
     height: var(--player-height);
     width: 100%;
-    background-color: dodgerblue;
-
+    
+    background-color: #282828;
+    
+    justify-content: space-between;
+    align-items: center;
 }
 
 #sidebar {
@@ -91,6 +97,8 @@ a {
 button {
     text-transform: uppercase;
     cursor: pointer;
+    background-color: transparent;
+    border-style: none;
 }
 
 .title {
@@ -100,7 +108,6 @@ button {
 
 .subtitle {
     color: var(--color-lgray);
-    font-size: var(--font-xs);
 }
 
 h2 {
@@ -112,6 +119,19 @@ h3 {
     font-size: var(--font-s);
     padding: 10px 0;
 } 
+
+h5 {
+    font-size: var(--font-xs);
+}
+
+h6 {
+    font-size: var(--font-2xs);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 
 /*! UTILS  */
 
@@ -136,10 +156,6 @@ h3 {
     margin: - var(--spacing-xs);
 }
 
-.row img {
-    width: 100%;
-    height: auto;
-}
 
 .row .card {
     padding: var(--spacing-xs);
@@ -266,4 +282,142 @@ h3 {
 
 #most-popular img {
     border-radius: 50%;
+}
+
+/*! PLAYER */
+
+/* player-left */
+.player-left {
+    flex-basis: 30%;
+    align-items: center;
+}
+
+.now-playing-img {
+    height: auto;
+    flex-basis: 30px;
+    margin: 0 var(--spacing-xs);
+}
+
+.player-left div {
+    display: flex;
+    flex-direction: column;
+}
+
+.now-playing {
+    flex-basis: 50%;
+}
+
+.now-playing a {
+    color: white;
+}
+
+.now-playing-opt button {
+    color: var(--color-lgray);
+}
+
+/* player center */
+
+.player-center {
+    flex-basis: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 var(--spacing-s);
+}
+
+.player-progress {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.commands {
+    justify-content: space-around;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.commands button{
+    color: white;
+    font-size: var(--font-m);
+    padding: 0 5px;
+}
+
+button.play-pause {
+    flex-basis: 30%;
+    font-size: var(--font-xl);
+}
+
+.progress-bar {
+    flex-basis: 100%;
+}
+
+.in-progress {
+    position: relative;
+    display: block;
+    top: 3px;
+    left: 0;
+
+    width: 9%;
+    height: 3px;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+}
+
+.progress-tot {
+    display: block;
+    height: 3px;
+    width: 100%;
+
+    background-color: var(--color-gray);
+    border-radius: 3px;
+}
+
+.ticker-progress,
+.duration {
+    padding: 0 5px;
+
+    font-size: var(--font-2xs);
+    color: white;
+}
+
+/* player right */
+
+.player-right {
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.player-right button {
+    color: white;
+    padding: 0 3px;
+}
+
+.volume-bar {
+    flex-basis: 50%;
+}
+.vol-progress {
+    position: relative;
+    display: block;
+    top: 3px;
+    left: 0;
+
+    width: 30%;
+    height: 3px;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+}
+
+.vol-tot {
+    display: block;
+    height: 3px;
+    width: 100%;
+
+    background-color: var(--color-gray);
+    border-radius: 3px;
 }
