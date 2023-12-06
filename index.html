@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <meta name="author" content="Francesco Pasquinoni">
         <meta name="description" content="Spotify webapp">
 
@@ -15,13 +15,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
+        
         <!-- Collegamento font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"/>
+       
         <!-- Collegamento foglio di stile -->
         <link rel="stylesheet" href="./style/style.css">
+        
         <!-- Collegamento foglio di stile responsive -->
         <link rel="stylesheet" href="./style/responsive.css">
 
@@ -48,18 +51,36 @@
                         <li><a href=""><img src="./img/libreria.svg" alt="library"><span class="display-none">La tua libreria</span></a></li>
                     </ul>
                 </div>
-                <!-- playlist section -->
                 <section class="display-none" id="playlists">
-                    <h3>Playlist</h3>
+                    <h3 class="title">PLAYLIST</h3>
                     <ul>
-                        <li class="create-new-playlist"><i class="fa-solid fa-plus"></i> Crea Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
-                        <li class="playlist-name">Nome Playlist</li>
+                        <li class="create-new-playlist">
+                            <a class="" href="#">   
+                                <i class="fa-solid fa-plus"></i> 
+                                <span>Crea Playlist</Span>
+                            </a> 
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li>
+                        <li class="playlist-name">
+                           <a href="#">Nome Playlist</a>
+                        </li> 
                     </ul>
                 </section>
             </div>
@@ -67,14 +88,14 @@
 
             <!-- sidebar BOTTOM -->
             <div class="sidebar-bottom">
-                <div class="instal-app">
+                <div class="instal-app flex center">
                     <img src="./img/download.svg" alt="download">
-                    <span class="display-none">Installa app</span>
+                    <span class="display-none subtitle">Installa app</span>
                 </div>
-                <div class="horiz-rule invisible"></div>
-                <div class="user-info">
+                <div class="horiz-rule hidden"></div>
+                <div class="user-info flex center">
                     <img src="./img/profile.svg" alt="profile">
-                    <span class="profile-name display-none">Pasqui</span>
+                    <span class="profile-name title display-none">Pasqui</span>
                 </div>
             </div>
 
@@ -205,12 +226,12 @@
             <figure class="now-playing-img">
                 <img src="./img/sinister.jpeg" alt="sinister">
             </figure>
-            <div class="now-playing">
+            <div class="now-playing flex">
                 <h5 class="title"><a href="#">Sinister</a></h5>
                 <h6 class="subtitle">Brano</h6>
                 <h6 class="subtitle">Nome</h6>
             </div>
-            <div class="now-playing-opt">
+            <div class="now-playing-opt flex">
                 <button class="fav"><i class="fa-regular fa-heart"></i></button>
                 <button class="folder"><i class="fa-regular fa-folder"></i></button>
             </div>

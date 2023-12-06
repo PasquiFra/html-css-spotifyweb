@@ -32,9 +32,51 @@
    }
 
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:650px) {
     
     #sidebar {
-        width: 250px;
+        flex-basis: 200px;
+    }
+
+    .display-none {
+        display: block;
+    }
+
+    #logo-small {
+        display: none;
+    }
+
+    .hidden {
+        visibility: visible;
+    }
+
+    .instal-app img{
+        margin-bottom: 0;
+    }
+
+    .instal-app {
+        text-align:start;
+        justify-content: flex-start;
+        padding-left: 6px;
+    }  
+
+    .now-playing {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .now-playing h6 {
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-width:850px) {
+
+    .now-playing-opt {
+        flex-direction: row;
+        gap: var(--spacing-s);
+    }
+
+    .player-right button {
+        padding: 0 8px;
     }
 }
