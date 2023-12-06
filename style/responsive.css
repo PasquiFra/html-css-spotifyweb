@@ -79,4 +79,12 @@
     .player-right button {
         padding: 0 8px;
     }
+
+    .row .col {
+        flex-basis: 25%;
+    }
+
+    .sub-nav li{
+        font-size: var(--font-xs);
+    }
 }
