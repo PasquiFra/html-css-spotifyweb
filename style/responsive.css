@@ -6,10 +6,9 @@
     --color-white: #ffffff;
     --color-lgray: #8b8787;
     --color-gray: #686565;
-    
-    --main-title-font: 0.8rem;
+    --color-limegreen: #ADFF2F;
+
     --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
-    --song-subtitle-font: 0.8rem;
 
     --player-height: 80px;
     --sidebar-width-s: 50px;

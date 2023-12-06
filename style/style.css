@@ -8,15 +8,11 @@
     --color-gray: #686565;
     --color-limegreen: #ADFF2F;
 
-    
-    --main-title-font: 0.8rem;
     --song-title-font: 0.8rem;  /* titoli canzoni + profilo */
-    --song-subtitle-font: 0.8rem;
 
     --player-height: 80px;
     --sidebar-width-s: 50px;
     --sidebar-width-l: 250px;
-
 
     --font-2xs: .6rem;
     --font-xs: .7rem;
@@ -27,21 +23,10 @@
     --font-xl: 1.8rem;
     --font-2xl: 2.3rem;
     
-    
     --spacing-xs: .5rem;
     --spacing-s: .8rem;
     --spacing-m: 1rem;
    }
-
-/*! FONT AWESOME */
-
-.fa-plus {
-    background-color: var(--color-lgray);
-    padding: 7px;
-    color: black;
-    font-weight: 900;
-    font-size: var(--font-ml);
-}
 
 /*! GENERAL RULES  */
 
@@ -54,30 +39,6 @@
 
 body {
     min-height: var(--player-height);
-}
-
-footer {
-    height: var(--player-height);
-    width: 100%;
-    
-    background-color: #282828;
-    
-    justify-content: space-between;
-    align-items: center;
-}
-
-#sidebar {
-    height: 100%;        
-    padding: 0 12px;
-    
-    background-color: black;
-    
-    flex-basis: 50px;
-    flex-shrink: 0;
-    justify-content: space-between;
-    flex-direction: column;
-
-    overflow: hidden;
 }
 
 ul {
@@ -161,9 +122,7 @@ center {
 .row .col {
     flex-basis: 50%;
     text-align: center;
-    margin: - var(--spacing-xs);
 }
-
 
 .row .card {
     padding: var(--spacing-xs);
@@ -186,10 +145,33 @@ center {
     transform: scale(1.1);
 }
 
+/*! FONT AWESOME settings */
+
+.fa-plus {
+    background-color: var(--color-lgray);
+    padding: 7px;
+    color: black;
+    font-weight: 900;
+    font-size: var(--font-ml);
+}
+
 /*! --------------- SECTIONS ------------------- */
 
 /*! SIDEBAR */
 
+#sidebar {
+    height: 100%;        
+    padding: 0 12px;
+    
+    background-color: black;
+    
+    flex-basis: 50px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    flex-direction: column;
+
+    overflow: hidden;
+}
 
 /* sidebar top settings */
 
@@ -424,7 +406,17 @@ center {
     border-radius: 50%;
 }
 
-/*! PLAYER */
+/*! PLAYER (FOOTER)*/
+
+footer {
+    height: var(--player-height);
+    width: 100%;
+    
+    background-color: #282828;
+    
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* player-left */
 .player-left {
